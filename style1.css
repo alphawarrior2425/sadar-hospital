@@ -1,0 +1,60 @@
+.appointment-form-container {
+  max-width: 420px;
+  margin: 32px auto 0 auto;
+  padding: 32px 24px 24px 24px;
+  background: #f7fafc;
+  box-shadow: 0 2px 8px #24c6dc11;
+  border-radius: 16px;
+  border: 1px solid #e6f7fa;
+  position: relative;
+  z-index: 2;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  box-sizing: border-box;
+}
+#appointmentForm label {
+  display: block;
+  font-weight: 500;
+  color: #183153;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+#appointmentForm input[type="text"],
+#appointmentForm select,
+#appointmentForm textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #b2e4ee;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  color: #183153;
+  transition: border 0.15s, box-shadow 0.15s;
+  outline: none;
+  resize: vertical;
+}
+#appointmentForm input[type="text"]:focus,
+#appointmentForm select:focus,
+#appointmentForm textarea:focus {
+  border: 1.5px solid #24c6dc;
+  box-shadow: 0 0 0 2px #24c6dc22;
+}
+#appointmentForm button[type="submit"] {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #24c6dc 0%, #43e97b 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #24c6dc22;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+#appointmentForm button[type="submit"]:hover {
+  background: linear-gradient(90deg, #43e97b 0%, #24c6dc 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px #43e97b22;
+}
